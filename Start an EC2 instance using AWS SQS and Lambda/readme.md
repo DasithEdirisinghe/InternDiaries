@@ -1,4 +1,7 @@
 # Getting started with AWS SQS and Lambda Trigger to start an ec2 instance
+
+[Read my medium article for complete explanation](https://dasith-dev.medium.com/intern-diaries-1-d7307d93367)
+
 ## The summary of what we wanted to achieve here was :
 
   1.  Send objects to the FIFO queue using the S3 bucket in a sequence manner

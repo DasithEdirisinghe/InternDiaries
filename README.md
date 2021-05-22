@@ -1,4 +1,6 @@
 # InternDiaries
 
-### Hello Guys. This Repo is regarding my projects and task related to my internship.
-### Feel free to give your feedbacks and ideas
+#### Hello Guys. This Repo is regarding my projects and task related to my internship.
+#### Feel free to give your feedbacks and ideas
+  - [Start an EC2 Instance](https://github.com/DasithEdirisinghe/InternDiaries/tree/main/Start%20an%20EC2%20instance%20using%20AWS%20SQS%20and%20Lambda)
+ 

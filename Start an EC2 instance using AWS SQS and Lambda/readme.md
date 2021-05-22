@@ -149,8 +149,4 @@ You can create a custom test plan using the lambda function console or test via 
 To test this you can simply send a message to the FIFO queue using SQS console. { When sending messages make sure to put the same group ID (Messages that belong to the same message group are processed in a FIFO manner. However, messages in different message groups might be processed out of order) and different duplicate ID for every message }
 By monitoring the EC2 console you could see that new instances are being created and the FIFO queue becomes empty because when the function is triggered the particular message also will be automatically deleted.
 
-### Conclusion
-
-I hope you guys got an idea about how I achieve the target and apology for not including images of steps that I followed. I am currently having a permission issue with my AWS account so I can’t capture screenshots.
-This is my first medium article and could have tiny mistakes and unclear points. However, feel free to give your comments, and hope to fix those little bugs 😉 and see you in the next article soon.
-Thank you for reading the article and if you want more to learn on AWS please refer to the AWS doc.
+### THANK YOU

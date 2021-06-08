@@ -18,6 +18,7 @@ def lambda_handler(event, context):
 
   userData1 = f”#!/bin/bash \n echo ‘message id : {messageId} , body : {body}’ > /home/ec2-user/message.txt \n”
   
+  #script to terminate the instance
   userData2 = “””touch /home/ec2-user/file
   cat << EOF > /home/ec2-user/file
   aws configure set aws_access_key_id xxxxxx
@@ -30,6 +31,7 @@ def lambda_handler(event, context):
   
   userDataEncoded = userData1+userData2
   
+  #create instance
   instance = ec2.create_instances(
   ImageId=AMI,
   InstanceType=INSTANCE_TYPE,

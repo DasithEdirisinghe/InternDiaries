@@ -4,7 +4,7 @@ import boto3
 ACCESS_KEY = 'xxxxxxxxxxxxxx'
 SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxx'
 bucket_name = 'S3bucketname'
-fileName = "pythontest.txt"
+fileName = "/tmp/pythontest.txt"
 s3_file_name = fileName
 
 def main():

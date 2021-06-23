@@ -1,10 +1,9 @@
 import sys
 import boto3
-from botocore.exceptions import NoCredentialsError
 
-ACCESS_KEY = 'AKIAYCVXP4N2A5KIILGR'
-SECRET_KEY = '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'
-bucket_name = 'nodepythonduebucket'
+ACCESS_KEY = 'xxxxxxxxxxxxxx'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxx'
+bucket_name = 'S3bucketname'
 fileName = "pythontest.txt"
 s3_file_name = fileName
 
@@ -12,9 +11,7 @@ def main():
     f = open(fileName,"w+")
 
     f.write(" TXT File is created")
-    
-    print(f.name)
-    
+   
     f.close()
 
 def upload_to_aws(local_file, bucket, s3_file):

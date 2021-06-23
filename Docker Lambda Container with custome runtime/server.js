@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 
 exports.lambdaHandler = async (event,context) => {
     
-    exec(`python3 /usr/scr/app/task.py`, (err) => {
+    exec(`python3 /usr/src/node/task.py`, (err) => {
         if (err) {
             //some err occurred
             console.error(err)

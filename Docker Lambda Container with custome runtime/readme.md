@@ -1,5 +1,7 @@
 ### This is regarding how to develop a docker lambda nodejs runtime on top of a python based image and invoke the lambda function using the AWS latest container image support.
 
+[Read this article to get complete insight](https://dasith-dev.medium.com/create-a-docker-container-image-with-custom-lambda-runtime-c1c73944d87e)
+
 # 1
 
 #### Here I have already created the python base image and pushed into the docker hub. You can find the repo [here](https://hub.docker.com/repository/docker/dasithdev/python-app)

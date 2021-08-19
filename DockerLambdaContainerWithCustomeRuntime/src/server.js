@@ -2,6 +2,8 @@ const { exec } = require('child_process');
 
 exports.lambdaHandler = async (event,context) => {
 
+try {
+	
     const spawn_options = {
     cwd: '/usr/src/node', 
     shell:'bash'
@@ -10,7 +12,8 @@ exports.lambdaHandler = async (event,context) => {
     exec(`python3 task.py`,spawn_options, (err) => {
         if (err) {
             //some err occurred
-            console.error(err)
+            console.error(err);
+	    throw err;
         }
 	   else{
 	    console.log("python file created");
@@ -22,4 +25,8 @@ exports.lambdaHandler = async (event,context) => {
     };
     return response;
 
+}catch(err){
+    throw err;
+}
+    
 };
